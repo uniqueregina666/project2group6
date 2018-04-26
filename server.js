@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(express.static("public"));
 
 // Routes
-
+require("./routes/job-post-routes.js")(app);
 
 // Sync sequelize models and then start up the Express app
 

@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes){
 
-    var jobPost = sequelize.define("jobPost", {
+    var JobPost = sequelize.define("jobPost", {
         
         jobTitle: {
             type: DataTypes.STRING,
@@ -31,5 +31,5 @@ module.exports = function(sequelize, DataTypes){
         }
         
     })
-    return jobPost;
+    return JobPost;
 };
