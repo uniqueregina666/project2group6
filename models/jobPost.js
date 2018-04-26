@@ -17,7 +17,7 @@ module.exports = function(sequelize, DataTypes){
             }
         },
         jobOverview: {
-            type: Data.Types.TEXT,
+            type: DataTypes.TEXT,
             allowNull: false,
             len: [1]
         },
@@ -26,7 +26,7 @@ module.exports = function(sequelize, DataTypes){
             allowNull: true,
         },
         salaryRange: {
-            type: DataTypes.INTERGER,
+            type: DataTypes.INTEGER,
             allowNull: true
         }
         
