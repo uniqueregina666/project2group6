@@ -9,7 +9,6 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 // Require models for syncing
-
 var db = require("./models");
 
 // set up body parser to allow data parsing
