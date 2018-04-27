@@ -17,17 +17,16 @@ var db = require("./models");
 app.use(bodyParser.urlencoded({ extended:true}));
 app.use(bodyParser.json());
 
-// static directory
-
-app.use(express.static("public"));
+// Static directory
+app.use(express.static('./public'));
 
 // Routes
 require("./routes/job-post-routes.js")(app);
+require("./routes/html-routes")(app);
 
 // Sync sequelize models and then start up the Express app
-
-db.sequelize.sync({force: true}).then(function(){
-    app.listen(PORT, function(){
-        console.log("App listening on PORT " + PORT);
-    })
-});
+db.sequelize.sync({ force: true }).then(function() {
+    app.listen(PORT, function() {
+      console.log("App listening on PORT " + PORT);
+    });
+  });
