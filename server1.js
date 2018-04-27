@@ -5,7 +5,10 @@ var path = require('path');
 
 // Configure the Express application
 var app = express();
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 8080;
+
+// Require models for syncing
+var db = require("./models");
 
 // Expose the public directory to access CSS files
 app.use(express.static(path.join(__dirname, './app/public')));
@@ -15,11 +18,23 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 
+// static directory
+
+app.use(express.static("./public"));
+
 // Add the application routes
 require(path.join(__dirname, './app/routing/apiRoutes'))(app);
 require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
 
-// Start listening on PORT
-app.listen(PORT, function() {
-  console.log('Job app is listening on PORT: ' + PORT);
+// Routes
+
+require("./routing/html-routes")(app);
+require("./routing/post-api-routes")(app);
+// Sync sequelize models and then start up the Express app
+
+db.sequelize.sync({force: true}).then(function(){
+    app.listen(PORT, function(){
+        console.log("App listening on PORT " + PORT);
+    })
 });
+
