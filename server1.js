@@ -1,30 +1,24 @@
-// Pull in required dependencies
-var express = require('express');
-var bodyParser = require('body-parser');
-var path = require('path');
+// Dependencies 
 
-// Configure the Express application
+var express = require("express");
+var bodyParser = require("body-parser");
+
+// set up express app
+
 var app = express();
 var PORT = process.env.PORT || 8080;
 
 // Require models for syncing
 var db = require("./models");
 
-// Expose the public directory to access CSS files
-app.use(express.static(path.join(__dirname, './app/public')));
+// set up body parser to allow data parsing
 
-// Add middleware for parsing incoming request bodies
+app.use(bodyParser.urlencoded({ extended:true}));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.text());
 
 // static directory
 
 app.use(express.static("./public"));
-
-// Add the application routes
-require(path.join(__dirname, './app/routing/apiRoutes'))(app);
-require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
 
 // Routes
 
@@ -37,4 +31,3 @@ db.sequelize.sync({force: true}).then(function(){
         console.log("App listening on PORT " + PORT);
     })
 });
-
