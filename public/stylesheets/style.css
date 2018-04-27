@@ -12,3 +12,10 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+.collection {
+  border-color: #ffd54f;
+ border-width: 5px;
+}
+#interview-item {
+  background:#ffd54f;
+}
