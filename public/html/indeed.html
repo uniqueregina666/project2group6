@@ -1,7 +1,15 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Employee Job Search Portal</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="../js/indeed.js"></script>
 
     <script type="text/javascript">
@@ -16,5 +24,69 @@
         });
     </script>
 </head>
-<body></body>
+
+<body>
+  <!-- navbar -->
+  <nav class="light-blue lighten-2" role="navigation" id="employee_nav">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="../img/logo_employee.png"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+
+      <!-- mobile navbar -->
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+    
+    <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="jobtitle" id="jobtitle" type="text" class="validate">
+              <label for="jobtitle">Job Title </label>
+            </div>
+            <div class="input-field col s6">
+              <input id="location" type="text" class="validate">
+              <label for="location">Location</label>
+            </div>
+          </div>
+          </div>
+        </form>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Resources</h5>
+        <ul>
+          <li><a class="white-text" href="#!">Link 1</a></li>
+          <li><a class="white-text" href="#!">Link 2</a></li>
+          <li><a class="white-text" href="#!">Link 3</a></li>
+        </ul>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Connect</h5>
+        <ul>
+          <li><a class="white-text" href="#!">Link 1</a></li>
+          <li><a class="white-text" href="#!">Link 2</a></li>
+          <li><a class="white-text" href="#!">Link 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2018 <a class="amber-text" href="#">GitaJob</a>
+    </div>
+  </div>
+</footer>
+
+<!-- scripts -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="../js/materialize.js"></script>
+<script src="../js/init.js"></script>
+
+</body>
 </html>
