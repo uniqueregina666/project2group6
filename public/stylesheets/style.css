@@ -15,6 +15,7 @@
 .collection {
   border-color: #ffd54f;
  border-width: 5px;
+ border-radius: 10px;
 }
 #interview-item {
   background:#ffd54f;
