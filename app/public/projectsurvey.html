@@ -79,7 +79,7 @@
 
                 <h4><strong>Question 2</strong></h4>
                 <h5>Can you design something with a theme in mind?</h5>
-                <select data-placeholder="" class="chosen-select" id="Q1">
+                <select data-placeholder="" class="chosen-select" id="Q2">
                   <option value=""></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -90,7 +90,7 @@
 
                 <h4><strong>Question 3</strong></h4>
                 <h5>Can you explain your ideas to others in way they can understand?</h5>
-                <select data-placeholder="" class="chosen-select" id="Q1">
+                <select data-placeholder="" class="chosen-select" id="Q3">
                   <option value=""></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -101,7 +101,7 @@
 
                 <h4><strong>Question 4</strong></h4>
                 <h5>In your spare time, do you undertake logic games? (Sudoku, Minesweeper, etc.)</h5>
-                <select data-placeholder="" class="chosen-select" id="Q1">
+                <select data-placeholder="" class="chosen-select" id="Q4">
                   <option value=""></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -112,7 +112,7 @@
 
                 <h4><strong>Question 5</strong></h4>
                 <h5>Would you think of yourself as a problem solver?</h5>
-                <select data-placeholder="" class="chosen-select" id="Q1">
+                <select data-placeholder="" class="chosen-select" id="Q5">
                   <option value=""></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -123,7 +123,7 @@
 
                 <h4><strong>Question 6</strong></h4>
                 <h5>Are you good at multi-tasking?</h5>
-                <select data-placeholder="" class="chosen-select" id="Q1">
+                <select data-placeholder="" class="chosen-select" id="Q6">
                   <option value=""></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -134,7 +134,7 @@
 
                 <h4><strong>Question 7</strong></h4>
                 <h5>Researching is an intregal part of my repertoire?</h5>
-                <select data-placeholder="" class="chosen-select" id="Q1">
+                <select data-placeholder="" class="chosen-select" id="Q7">
                   <option value=""></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -145,7 +145,7 @@
 
                 <h4><strong>Question 8</strong></h4>
                 <h5>You have a passion for technology.</h5>
-                <select data-placeholder="" class="chosen-select" id="Q1">
+                <select data-placeholder="" class="chosen-select" id="Q8">
                   <option value=""></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -156,7 +156,7 @@
 
                 <h4><strong>Question 9</strong></h4>
                 <h5>Winning an argument is important to you.</h5>
-                <select data-placeholder="" class="chosen-select" id="Q1">
+                <select data-placeholder="" class="chosen-select" id="Q9">
                   <option value=""></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -167,7 +167,7 @@
 
                 <h4><strong>Question 10</strong></h4>
                 <h5>People say you have an eye for attention.</h5>
-                <select data-placeholder="" class="chosen-select" id="Q1">
+                <select data-placeholder="" class="chosen-select" id="Q10">
                   <option value=""></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
@@ -179,129 +179,145 @@
         </div>
     </div>
 
-    <button id="submitButton" type="submit" class="btn btn-md btn-primary btn-block"><h4><span class="glyphicons glyphicons-message-out"></span> Submit</h4></button>
+    <button id="submitButton" type="submit" class="btn btn-md btn-danger btn-block"><h4><span class="glyphicon glyphicon-send"></span> Submit</h4></button> 
 
     <br>
 
+   
+     
+
+
+    <!-- Match Modal -->
     <div id="resultsModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+      <div class="modal-dialog">
 
-            <div class="modal-content">
+        <!-- Modal Content-->
+        <div class="modal-content">
 
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h2 class="modal-title"><strong>Recommended Career</strong></h2>
-                </div>
-            
-                <div class="modal-body">
-                    <h2 id="matchName"></h2>
-                    <img id="matchImg" src="" alt="Image Not Found" style="max-width: 350px;">
-                 </div>
+          <!-- "X" Button to close the modal -->
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title"><strong>Your Recommended Career!</strong></h2>
+          </div>
 
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-         </div>
+          <!-- Modal Body (For Match Info) -->
+          <div class="modal-body">
+            <h2 id="matchName"></h2>
+            <img id="matchImg" src="" alt="Image Not Found" style="max-width: 350px;">
+          </div>
+
+          <!-- Modal Footer (Close Button) -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery.js"></script>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+  
+  <script>
     
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    var allFieldsCompleted;
+    $(document).ready(function() {
+      
+      $('#submitButton').on('click', function() {
+        
+        
+        checkIfComplete(function(){
+          
+          if(allFieldsCompleted){
+            collectInputs();
+          }
+          else{
+            alert('Please complete all fields before submitting!');
+          }
+        }); 
+      }); 
+    }); 
     
-    <script>
-    
-        var allFieldsCompleted;
-        $(document).ready(function(){
-
-            $('#submitButton').on('click', function(){
-
-                checkIfComplete(function(){
-
-                    if(allFieldsCompleted){
-                        collectInputs();
-                    }
-                    else{
-                        alert('Please complete all fields before submitting!');
-                    }
-                });
-            });
-        });
-
-        function checkIfComplete(callback){
-
-            var questionsCompleted;
-            $('.chosen-select').each(function(){
-                if($(this).val() == "" ){
-                    questionsCompleted = false;
-                }
-            })
-
-            .promise().done(function(){
-
-                if(questionsCompleted == false){
-                    allFieldsCompleted = false;
-                }
-
-                else if($('#formName').val().trim() == "" ){
-                    allFieldsCompleted = false;
-                }
-
-                else if($('#formNumber').val().trim() == "" ){
-                    allFieldsCompleted = false;
-                }
-
-                else if($('#formEmail').val().trim() == "" ){
-                    allFieldsCompleted = false;
-                }
-
-                else{
-                    allFieldsCompleted = true;
-                }
-
-                callback();
-            });
+    function checkIfComplete(callback){
+      
+      var questionsCompleted;
+      $('.chosen-select').each(function(){
+        if ( $(this).val() == "" ){
+          questionsCompleted = false;
         }
-        function collectAnswers(){
-            
-            var newProspect = {
-            
-            name: $('#formName').val().trim(),
-            scores: []
-        };
-
-        var scoresArray = [];
-        $('.chosen-select').each(function(){
-            scoresArray.push(parseInt($(this).val()));
-        })
-
-        .promise().done(function(){
-
-            newProspect.scores = scoresArray;
-
-            var currentURL = window.location.origin;
-            $.post(currentURL + "/api/career", newProspect, function(data){
-
-                $('#matchName').text(data.name);
-                $('#matchImg').attr(data.photo);
-
-                $('#resultsModal').modal('toggle');
-            });
-        });
-
+      })
+      
+      .promise().done(function(){
+        
+        if(questionsCompleted == false){
+          allFieldsCompleted = false;
         }
+        
+        else if( $('#formName').val().trim() == "" ){
+          allFieldsCompleted = false;
+        }
+        
+        else if( $('#formNumber').val().trim() == "" ){
+          allFieldsCompleted = false;
+        }
+
+        else if( $('#formEmail').val().trim() == "" ){
+          allFieldsCompleted = false;
+        
+        }
+        else{
+          allFieldsCompleted = true;
+        }
+        console.log("I am here"),
+        callback();       
+      });
+    }
+    function collectInputs(){
+      
+      var newFriend = {
+        name: $('#formName').val().trim(),
+        
+        scores: []
+      };
+      
+      var scoresArray = [];
+      $('.chosen-select').each(function(){
+        scoresArray.push( parseInt( $(this).val() ) ); 
+      })
+       
+      .promise().done(function(){
+        
+        
+        newFriend.scores = scoresArray;
+        
+        var currentURL = window.location.origin;
+        $.post(currentURL + "/api/friends", newFriend, function(data){
+          
+          $('#matchName').text(data.name);
+          $('#matchImg').attr('src', data.photo);
+          
+          $("#resultsModal").modal('toggle');
+        }); 
+      });
+    }
+  </script>  
     
     
-    </script>
     
     
     
     
     
     
-    
-    
-    </div>
     
 </body>
 </html>

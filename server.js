@@ -1,33 +1,25 @@
-// Dependencies 
+// Pull in required dependencies
+var express = require('express');
+var bodyParser = require('body-parser');
+var path = require('path');
 
-var express = require("express");
-var bodyParser = require("body-parser");
-
-// set up express app
-
+// Configure the Express application
 var app = express();
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3000;
 
-// Require models for syncing
+// Expose the public directory to access CSS files
+app.use(express.static(path.join(__dirname, './app/public')));
 
-var db = require("./models");
-
-// set up body parser to allow data parsing
-
-app.use(bodyParser.urlencoded({ extended:true}));
+// Add middleware for parsing incoming request bodies
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.text());
 
-// static directory
+// Add the application routes
+require(path.join(__dirname, './app/routing/apiRoutes.js'))(app);
+require(path.join(__dirname, './app/routing/htmlRoutes.js'))(app);
 
-app.use(express.static("public"));
-
-// Routes
-
-
-// Sync sequelize models and then start up the Express app
-
-db.sequelize.sync({force: true}).then(function(){
-    app.listen(PORT, function(){
-        console.log("App listening on PORT " + PORT);
-    })
+// Start listening on PORT
+app.listen(PORT, function() {
+  console.log('Gitajob app is listening on PORT: ' + PORT);
 });
