@@ -21,12 +21,12 @@ app.use(bodyParser.json());
 app.use(express.static("./public"));
 
 // Routes
-
+require("./routing/applicants-api-routes")(app);
 require("./routing/html-routes")(app);
 require("./routing/post-api-routes")(app);
 // Sync sequelize models and then start up the Express app
 
-db.sequelize.sync({force: true}).then(function(){
+db.sequelize.sync().then(function(){
     app.listen(PORT, function(){
         console.log("App listening on PORT " + PORT);
     })
