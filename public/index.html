@@ -7,14 +7,17 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="public/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="public/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- navbar -->
   <nav class="grey darken-3" role="navigation" id="main_nav">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="public/img/logo_main.png"></a>
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="./img/logo_main.png"></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Login</a></li>
         <li><a href="#">Contact Us</a></li>
@@ -44,7 +47,7 @@
       <!-- employee / employer buttons -->
       <div class="row center">
           <div class="col s12 m5">
-            <a href="public/html/employee.html" id="employee-button" class = "card-panel waves-effect waves-light light-blue lighten-2">
+            <a href="/employee" id="employee-button" class = "card-panel waves-effect waves-light light-blue lighten-2">
               <i class="medium material-icons white-text">search</i>
               <span class = "white-text"><h5>Search Job Listings:</h5>Sort through job listings and find <br>your dream job!</span><br><br></a>
           </div>
@@ -52,7 +55,7 @@
           <div class="col s12 m2"></div>
           
           <div class="col s12 m5">
-              <a href="public/html/employer.html" id="employee-button" class = "card-panel waves-effect waves-light amber">
+              <a href="/employer" id="employee-button" class = "card-panel waves-effect waves-light amber">
                 <i class="medium material-icons white-text">group_add</i>
                 <span class = "white-text"><h5>Employers Enter Here:</h5>Sort through applicants and find <br>the perfect person for your team!</span><br><br></a>
           </div>
