@@ -18,8 +18,8 @@ module.exports = function(app){
     // GET route to get all applicant's data
 
     app.get("/api/applicants", function(req, res) {
-        db.applicants.findAll({}).then(function(dbAuthor) {
-          res.json(dbAuthor);
+        db.applicants.findAll({}).then(function(dbApplicants) {
+          res.json(dbApplicants);
         });
       });
 
@@ -29,5 +29,6 @@ module.exports = function(app){
       res.json(dbJobPost);
     });
   });
+  
 
 };
