@@ -24,6 +24,8 @@ app.use(express.static("./public"));
 require("./routing/applicants-api-routes")(app);
 require("./routing/html-routes")(app);
 require("./routing/post-api-routes")(app);
+require("./routing/jobsearch-routes")(app);
+
 // Sync sequelize models and then start up the Express app
 
 db.sequelize.sync().then(function(){
