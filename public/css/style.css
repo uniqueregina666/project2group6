@@ -32,3 +32,46 @@
 .btn {
   width: 100%;
 }
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+#main-nav{
+  background: #4fc3f7
+}
+.collection {
+  border-color: #4fc3f7;
+ border-width: 5px;
+ border-radius: 10px;
+}
+#interview-item {
+  background:#4fc3f7;
+}
+#about-yourself {
+ margin-left: 7px;
+ margin-right: 4px;
+}
+#about-others {
+  margin-left: 7px;
+  margin-right: 4px;
+}
+#list-other {
+  margin-left: 20px;
+}
+#list-yourself {
+  margin-left: 20px;
+}
+#list-yourself-1{
+  margin-left:20px;
+}
+#resource-footer{
+  background:#4fc3f7;
+}
+#interview-list {
+  margin-left: 20px;
+}
+
+
+Add CommentCollapse 
