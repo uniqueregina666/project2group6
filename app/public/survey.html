@@ -32,8 +32,7 @@
 				<a href="/" class="brand-logo" id="logo">Job Survey</a>
 				<ul class="right hide-on-med-and-down" id="head-nav-links">
 					<li><a href="/survey">Survey</a></li>
-					<li><a href="/api/friends">API Friends List</a></li>
-					<li><a href="https://github.com/zschneid85/Friend-Finder.git">GitHub Repo</a></li>
+					<li><a href="https://github.com/uniqueregina666/GitaJob">GitHub Repo</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -56,9 +55,9 @@
 						</div>
 
 						<div class="input-field col s6">
-							<h5>Link to Photo Image (Required)</h5>
+							<h5>Email (Required)</h5>
 							<i class="material-icons prefix">picture_in_picture</i>
-							<input type="text" class="validate" placeholder="Photo Link Here" id="userPhoto">
+							<input type="text" class="validate" placeholder="Email" id="userPhoto">
 						</div>
 
 						<!-- Survey Questions -->
@@ -103,7 +102,7 @@
 
 						<div class="input-field col s12">
 							<h3>Question 4</h3>
-							<h5>In your free time do you like to play logic games? (Sudoku,Minesweeper,Slitherlink)</h5>
+							<h5>In your free time do you like to play logic games? (Sudoku,Minesweeper)</h5>
 							<select id="question4">
 								<option value="" disabled selected>Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
@@ -208,33 +207,26 @@
 		<div class="container">
 			<div class="row">
 				<div class="col l6 s12">
-					<h5 class="white-text">Friend Finder App</h5>
+					<h5 class="white-text"></h5>
 					<p class="grey-text text-lighten-4">Thank you for taking the brief survey.</p>
-				</div>
-				<div class="col l4 offset-l2 s12">
-					<h5 class="white-text">Links</h5>
-					<ul>
-						<li><a class="grey-text text-lighten-3" href="/api/friends">API Friends List</a></li>
-						<li><a class="grey-text text-lighten-3" href="https://github.com/zschneid85/Friend-Finder.git">GitHub Repo</a></li>
-					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="footer-copyright">
 			<div class="container">
-				© 2018 Zach Schneider
-				<a class="grey-text text-lighten-4 right" href="https://github.com/zschneid85">Reference Work</a>
+				
+				<a class="grey-text text-lighten-4 right" href="https://github.com/uniqueregina666/GitaJob">Reference Work</a>
 			</div>
 		</div>
 	</footer>
 
-	<!-- Modal Dialog Displaying Closest Friend Match -->
+	<!-- Modal Dialog Displaying Closest Job Match -->
 	<div id="modal1" class="modal">
 		<div class="modal-content">
-			<h4>Closest Friend Match</h4>
+			<h4></h4>
 			<div class="divider"></div>
 			<h5 id="userMatch"></h5>
-			<img id="userMatchImage" class="materialboxed" width="650" src="">
+			<img id="userMatchImage" class="materialboxed" width="650" src="https://www.pexels.com/collections/not-n7g0axq/">
 		</div>
 		<div class="modal-footer">
 			<a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill Again!</a>
@@ -283,7 +275,8 @@
 		    	$("#userMatchImage").attr("src", data.matchImage);
 		    	// Pop open the modal dialog
       			$('#modal1').modal('open');
-      		});
+			console.log()  
+			});
 		});
 	</script>
 </body>
