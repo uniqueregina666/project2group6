@@ -1,0 +1,51 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ .icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+<<<<<<< HEAD:public/stylesheets/style.css
+}
+#main-nav{
+  background: #4fc3f7
+}
+.collection {
+  border-color: #4fc3f7;
+ border-width: 5px;
+ border-radius: 10px;
+}
+#interview-item {
+  background:#4fc3f7;
+}
+#about-yourself {
+ margin-left: 7px;
+ margin-right: 4px;
+}
+#about-others {
+  margin-left: 7px;
+  margin-right: 4px;
+}
+#list-other {
+  margin-left: 20px;
+}
+#list-yourself {
+  margin-left: 20px;
+}
+#list-yourself-1{
+  margin-left:20px;
+}
+#resource-footer{
+  background:#4fc3f7;
+}
+#interview-list {
+  margin-left: 20px;
+=======
+>>>>>>> aeaac24e78b33c410133da1be28ba53369ee40a0:app/css/style.css
+}

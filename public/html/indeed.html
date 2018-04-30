@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Employee Job Search Portal</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    
+  <!-- script -->
+  <script src="../js/indeed.js"></script>
+    <script type="text/javascript">
+        var indeed_client = new Indeed("YOUR_PUBLISHER_NUMBER");
+        indeed_client.search({
+            q: 'javascript',
+            l: 'austin',
+            userip: '1.2.3.4',
+            useragent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2)',
+        }, function(search_response){
+            //render the jobs from the search_response
+        });
+    </script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="light-blue lighten-2" role="navigation" id="employee_nav">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="../img/logo_employee.png"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+
+      <!-- mobile navbar -->
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <!-- form & buttons section -->
+  <div class="container">
+
+    <!-- indeed form -->
+    <div class="row center">
+      <h4 class="header center"><span class="light-blue-text">Search Job Listings Below:</span></h4>
+      <form class="col s12">
+          <div class="input-field col s12">
+            <input placeholder="jobtitle" id="jobtitle" type="text" class="validate">
+            <label for="jobtitle">Job Title </label>
+          </div>
+          <div class="input-field col s12">
+            <input id="location" type="text" class="validate">
+            <label for="location">Location</label>
+          </div>
+      </form>  
+    </div>
+
+    <!-- submit | clear buttons -->
+    <div class="row center">
+      <div class="col s12 m6"></div>
+      <div class="col s12 m3">
+        <a href="#" class="waves-effect waves-light light-blue btn"><i class="material-icons right">search</i>submit</a>
+      </div>
+      <div class="col s12 m3">
+        <a href="#" class="waves-effect waves-light light-blue btn"><i class="material-icons right">clear</i>clear</a>
+      </div>
+    </div>
+    <br><br><br>
+
+  </div>
+
+  <!-- form results display -->
+  <div class="container">
+    <div class="row center">
+      <br><br><i>(results displayed here)</i><br><br><br><br>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="page-footer light-blue lighten-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About Us</h5>
+          <p class="white-text">Here at GitaJob, it was our goal to build a platform for creative individuals to connect with great companies in the tech industry.</p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Resources</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2018 <a class="amber-text" href="#">GitaJob</a>
+      </div>
+    </div>
+  </footer>
+
+<!-- scripts -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="../js/materialize.js"></script>
+<script src="../js/init.js"></script>
+
+</body>
+</html>

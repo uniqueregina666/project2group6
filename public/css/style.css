@@ -6,11 +6,37 @@
  * Made By MaterializeCSS.com
  */
 
- .icon-block {
+#main_nav ul li:hover {
+  background-color: #4fc3f7;
+}
+
+#employee_nav ul li:hover {
+  background-color: #03a9f4 ;
+}
+
+#employer_nav ul li:hover {
+  background-color: #ffd54f;
+}
+
+.icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
 	font-size: inherit;
+}
+
+.card-panel {
+  width: 100%;
+}
+
+.btn {
+  width: 100%;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
 }
 #main-nav{
   background: #4fc3f7
@@ -46,3 +72,6 @@
 #interview-list {
   margin-left: 20px;
 }
+
+
+Add CommentCollapse 
