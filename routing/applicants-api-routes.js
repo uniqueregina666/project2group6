@@ -16,7 +16,7 @@ module.exports = function(app) {
               specialty: "Front End"
             }
           }).then(function(dbApplicant) {
-            res.json(dbApplicant);
+            res.send(dbApplicant);
           });
        }
        else if (specialty==="backend"){
