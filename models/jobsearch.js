@@ -31,5 +31,5 @@ module.exports = function (sequelize, DataTypes) {
         }
 
     })
-    return JobPost;
+    return JobSearch;
 }; 
