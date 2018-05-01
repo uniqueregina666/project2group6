@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Survey</title>
+
+	<!-- Link to the jQuery Library -->
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  	<!-- Including Font Awesome Icons -->
+  	<script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
+
+	<!-- Link to reset stylesheet -->
+	<!-- <link rel="stylesheet" href="css/reset.css"> -->
+
+	<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Compiled and minified Materialize CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+	<!-- Compiled and minified Materialize JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+          
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="light-blue lighten-2" role="navigation" id="employee_nav">
+        <div class="nav-wrapper container"><a id="logo-container" href="../../index.html" class="brand-logo"><img src="../img/logo_employee.png"></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+    </nav>
+
+	<main>
+		<div class="container">
+			<div class="row">
+                <br><br>
+				<div class="col s12 z-depth-5 mainpanel">
+					<div id="mainpanel-content">
+                        <h1 class="header center"><span class="light-blue-text">Employee Survey</span></h1>
+						<div class="divider"></div>
+
+						<h3>About You</h3>
+
+						<div class="input-field col s6">
+							<h5>Name (Required)</h5>
+							<i class="material-icons prefix"><span class="light-blue-text">account_circle</span></i>
+							<input type="text" class="validate" placeholder="Your Name Here" id="userName">
+						</div>
+
+						<div class="input-field col s6">
+							<h5>Email (Required)</h5>
+							<i class="material-icons prefix"><span class="light-blue-text">picture_in_picture</span></i>
+							<input type="text" class="validate" placeholder="Email" id="userPhoto">
+						</div>
+
+						<!-- Survey Questions -->
+						<div class="input-field col s12">
+							<h4><span class="light-blue-text">Question 1</span></h4>
+							<h5>Do you like to make things appealing to others?</h5>
+							<select id="question1">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+
+						<div class="input-field col s12">
+                            <h4><span class="light-blue-text">Question 2</span></h4>
+							<h5>Can you design something with a theme in mind?</h5>
+							<select id="question2">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+
+						<div class="input-field col s12">
+                            <h4><span class="light-blue-text">Question 3</span></h4>
+							<h5>Can explain your ideas to others in a way that they can understand?</h5>
+							<select id="question3">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+
+						<div class="input-field col s12">
+                            <h4><span class="light-blue-text">Question 4</span></h4>
+							<h5>In your free time do you like to play logic games? (Sudoku, Minesweeper)</h5>
+							<select id="question4">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+
+						<div class="input-field col s12">
+                            <h4><span class="light-blue-text">Question 5</span></h4>
+							<h5>Would you think of yourself as a problem solver?</h5>
+							<select id="question5">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+
+						<div class="input-field col s12">
+                            <h4><span class="light-blue-text">Question 6</span></h4>
+							<h5>Are you good at multi-tasking?</h5>
+							<select id="question6">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+
+						<div class="input-field col s12">
+                            <h4><span class="light-blue-text">Question 7</span></h4>
+							<h5>Are you good at doing further research?</h5>
+							<select id="question7">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+
+						<div class="input-field col s12">
+                            <h4><span class="light-blue-text">Question 8</span></h4>
+							<h5>Do you have a love for technology?</h5>
+							<select id="question8">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+
+						<div class="input-field col s12">
+                            <h4><span class="light-blue-text">Question 9</span></h4>
+							<h5>Do you like to win arguments?</h5>
+							<select id="question9">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+
+						<div class="input-field col s12">
+                            <h4><span class="light-blue-text">Question 10</span></h4>
+							<h5>Do you have a good attenion to details?</h5>
+							<select id="question10">
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">1 (Strongly Disagree)</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (Strongly Agree)</option>
+							</select>
+						</div>
+
+						<!-- Survey Submit Button -->
+						<div>
+							<button class="btn waves-effect waves-light" type="submit" name="action" id="submitButton">Submit Responses
+								<i class="material-icons right">send</i>
+                            </button>
+                            <br><br>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+        <br><br>
+        <h3 class="header center"><span class="light-blue-text">Thank you for taking our brief survey.</span></h3>
+        <br><br>
+	</main>
+
+    <!-- footer -->
+    <footer class="page-footer light-blue lighten-2">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">About Us</h5>
+              <p class="white-text">Here at GitaJob, it is our goal to build a platform for creative individuals to connect with great companies in the tech industry.</p>
+            </div>
+            <div class="col l3 s12">
+              <h5 class="white-text">Resources</h5>
+              <ul>
+                <li><a class="white-text" href="#!">Link 1</a></li>
+                <li><a class="white-text" href="#!">Link 2</a></li>
+                <li><a class="white-text" href="#!">Link 3</a></li>
+              </ul>
+            </div>
+            <div class="col l3 s12">
+              <h5 class="white-text">Connect</h5>
+              <ul>
+                <li><a class="white-text" href="#!">Link 1</a></li>
+                <li><a class="white-text" href="#!">Link 2</a></li>
+                <li><a class="white-text" href="#!">Link 3</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            © 2018 <a class="amber-text" href="#">GitaJob</a>
+          </div>
+        </div>
+    </footer>
+
+	<!-- Modal Dialog Displaying Closest Job Match -->
+	<div id="modal1" class="modal">
+		<div class="modal-content">
+			<div class="divider"></div>
+			<h5 id="userMatch"></h5>
+			<img id="userMatchImage" class="materialboxed" width="650" src="https://www.pexels.com/collections/not-n7g0axq/">
+		</div>
+		<div class="modal-footer">
+			<a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill Again!</a>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('select').material_select();
+			$('.modal').modal({
+				dismissible: false, // Modal can be dismissed by clicking outside of the modal
+				opacity: .5, // Opacity of modal background
+				inDuration: 300, // Transition in duration
+				outDuration: 200, // Transition out duration
+				startingTop: '4%', // Starting top style attribute
+				endingTop: '10%' // Ending top style attribute
+			});
+		});
+		// Activate submit button
+		$('#submitButton').on('click', function(event) {
+			event.preventDefault();
+			// Gather user inputs
+			var userInput = {
+				name: $('#userName').val().trim(),
+				photo: $('#userPhoto').val().trim(),
+				scores:[
+					$('#question1').val().trim(),
+					$('#question2').val().trim(),
+					$('#question3').val().trim(),
+					$('#question4').val().trim(),
+					$('#question5').val().trim(),
+					$('#question6').val().trim(),
+					$('#question7').val().trim(),
+					$('#question8').val().trim(),
+					$('#question9').val().trim(),
+					$('#question10').val().trim()
+				]
+			};
+			// console.log('userInput = ' + JSON.stringify(userInput));
+			// Add user inputs to friends list
+			$.post('/api/friends', userInput)
+      		.done(function(data) {
+      			// console.log('response = ' + JSON.stringify(data));
+      			// Set the name and image values of friend match
+      			$('#userMatch').html(data.matchName);
+		    	$("#userMatchImage").attr("src", data.matchImage);
+		    	// Pop open the modal dialog
+      			$('#modal1').modal('open');
+			console.log()  
+			});
+		});
+	</script>
+</body>
+</html>
