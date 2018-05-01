@@ -8,23 +8,29 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="../public/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="../public/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
 </head>
 
 <body>
-  <nav role="navigation" id="main-nav">
+  <!-- navbar -->
+  <nav class="light-blue lighten-2" role="navigation" id="employee_nav">
     <div class="nav-wrapper container">
-        <img src="../public/img/logo_employee.png">
+      <a id="logo-container" href="../../index.html" class="brand-logo">
+        <img src="../img/logo_employee.png">
+      </a>
       <ul class="right hide-on-med-and-down">
         <li>
-          <a href="#">Navbar Link</a>
+          <a href="contact.html">Contact Us</a>
         </li>
       </ul>
 
+      <!-- mobile navbar -->
       <ul id="nav-mobile" class="sidenav">
         <li>
-          <a href="#">Navbar Link</a>
+          <a href="contact.html">Contact Us</a>
         </li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger">
@@ -32,9 +38,15 @@
       </a>
     </div>
   </nav>
+
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <div class="row">
+        <br><br>
+        <div class="row center">
+          <h4 class="header center"><span class="light-blue-text">Read these suggestions to write a successful<br> Resume or Cover Letter</span></h4>
+        </div>
+        <br><br>
         <!-- Resume collapsible -->
         <div class="col l6">
           <ul class="collapsible">
@@ -116,7 +128,8 @@
                           <ul>
                             <li>-Keep it short and concise (1-2 paragraphs is enough!)</li>
                             <br>
-                            <li>-Emphasize the value you’d be adding to the company with your skillset. (Ex: if they’re looking for a data engineer and you have experience with Hadoop, mention that)</li>
+                            <li>-Emphasize the value you’d be adding to the company with your skillset. (Ex: if they’re looking
+                              for a data engineer and you have experience with Hadoop, mention that)</li>
                             <br>
                             <li>-Make clear that you’ve looked them up and have a basic understanding of what their company does.</li>
                             <br>
@@ -170,52 +183,37 @@
                 </div>
             </div>
         </div>
+        <br><br><br><br>
 
+  <!-- footer -->
+  <footer class="page-footer light-blue lighten-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l8 s12">
+          <h5 class="white-text">About Us</h5>
+          <p class="white-text">Here at GitaJob, it is our goal to build a platform for creative individuals to connect with great companies in the tech industry.</p>
+        </div>
+        <div class="col l4 s12">
+          <h5 class="white-text">Resources</h5>
+          <ul>
+            <li><a href="interview.html" id="resource-links">Interview Tips</a></li>
+            <li><a href="meetup.html" id="resource-links">MeetUps in your Area</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2018 <a class="amber-text" href="#">GitaJob</a>
+      </div>
+    </div>
+  </footer>
 
-        <footer id="resource-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Company Bio</h5>
-                <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help
-                  support and continue development on this project and is greatly appreciated.</p>
-
-
-              </div>
-              <div class="col l3 s12">
-                <h5 class="white-text">Settings</h5>
-                <ul>
-                    <li><a href="../public/interview.html" id="resource-links">Interview</a></li>
-                    <li><a href="../public/meetup.html" id="resource-links">MeetUp</a></li>
-                </ul>
-              </div>
-              <div class="col l3 s12">
-                <h5 class="white-text">Connect</h5>
-                <ul>
-                  <li>
-                    <a class="white-text" href="#!">Link 1</a>
-                  </li>
-                  <li>
-                    <a class="white-text" href="#!">Link 2</a>
-                  </li>
-                  <li>
-                    <a class="white-text" href="#!">Link 3</a>
-                  </li>
-                  <li>
-                    <a class="white-text" href="#!">Link 4</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </footer>
-
-
-        <!--  Scripts-->
-        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="../js/materialize.js"></script>
-        <script src="../js/init.js"></script>
-        <script src="../js/resume.js"></script>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/init.js"></script>
+  <script src="../js/resume.js"></script>
 
 </body>
 

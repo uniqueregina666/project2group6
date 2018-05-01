@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <!-- CSS  -->
+    <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="./css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <title>GitaJob - Job Posting</title>
+    <title>Job Posting</title>
 
-  <!-- favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="public/img/favicon.ico"/>
-  
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+
 </head>
 
 <body>
 
     <!-- navbar -->
     <nav class="amber lighten-2" role="navigation" id="employer_nav">
-        <div class="nav-wrapper container"><a id="logo-container" href="../index.html" class="brand-logo"><img src="./img/logo_employer.png"></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-    
-          <!-- mobile navbar -->
-          <ul id="nav-mobile" class="sidenav">
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="../../index.html" class="brand-logo">
+                <img src="../img/logo_employer.png">
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+
+            <!-- mobile navbar -->
+            <ul id="nav-mobile" class="sidenav">
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
         </div>
     </nav>
 
     <!-- container to hold form -->
     <div class="container">
-        <h4 class="header center"><span class="amber-text">Create a New Job Listing Below:</span></h4>
+        <h4 class="header center">
+            <span class="amber-text">Create a New Job Listing Below:</span>
+        </h4>
         <!-- start of form -->
         <div class="row">
             <form class="col s12" id="jobForm">
@@ -92,39 +102,40 @@
             </form>
         </div>
     </div>
-    <br><br>
-    
+    <br>
+    <br>
+
     <!-- footer -->
     <footer class="page-footer amber">
-      <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-            <h5 class="white-text">About Us</h5>
-            <p class="white-text">Here at GitaJob, it was our goal to build a platform for creative individuals to connect with great companies in the tech industry.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col l8 s12">
+                    <h5 class="white-text">About Us</h5>
+                    <p class="white-text">Here at GitaJob, it is our goal to build a platform for creative individuals to connect with great companies
+                        in the tech industry.</p>
+                </div>
+                <div class="col l4 s12">
+                    <h5 class="white-text">Resources</h5>
+                    <ul>
+                        <li>
+                            <a href="resume.html" id="resource-links">Resume / Cover Letter</a>
+                        </li>
+                        <li>
+                            <a href="interview.html" id="resource-links">Interview Tips</a>
+                        </li>
+                        <li>
+                            <a href="meetup.html" id="resource-links">MeetUps in your Area</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col l3 s12">
-            <h5 class="white-text">Resources</h5>
-            <ul>
-                <li><a class="white-text" href="#!">Link 1</a></li>
-                <li><a class="white-text" href="#!">Link 2</a></li>
-                <li><a class="white-text" href="#!">Link 3</a></li>
-            </ul>
-            </div>
-            <div class="col l3 s12">
-            <h5 class="white-text">Connect</h5>
-            <ul>
-                <li><a class="white-text" href="#!">Link 1</a></li>
-                <li><a class="white-text" href="#!">Link 2</a></li>
-                <li><a class="white-text" href="#!">Link 3</a></li>
-            </ul>
-            </div>
-        </div>
         </div>
         <div class="footer-copyright">
-        <div class="container">
-            © 2018 <a class="light-blue-text" href="#">GitaJob</a>
+            <div class="container">
+                © 2018
+                <a class="light-blue-text" href="#">GitaJob</a>
+            </div>
         </div>
-      </div>
     </footer>
 
     <!-- Custom Script -->
@@ -133,4 +144,5 @@
     <script src="./js/init.js"></script>
 
 </body>
+
 </html>

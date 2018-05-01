@@ -1,119 +1,158 @@
-<html lang="en"><head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
-        <title>Employee Search</title>
-      
-        <!-- CSS  -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="../css/materialize.min.css" rel="stylesheet" type="text/css" media="screen,projection">
-        <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen,projection">
-      </head>
-      <body>
-        <nav class="light-blue lighten-1" role="navigation">
-          <div class="nav-wrapper container">
-              <img src="image/gitajob.png" alt="Brand" height="60" width="100">
-            <ul class="right hide-on-med-and-down">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-      
-            <ul class="sidenav" id="nav-mobile">
-              <li><a href="#">Navbar Link</a></li>
-            </ul>
-            <a class="sidenav-trigger" href="#" data-target="nav-mobile"><i class="material-icons">menu</i></a>
-          </div>
-        </nav>
-        <div class="section no-pad-bot" id="index-banner">
-          <div class="container">
-            <br><br>
-            <h1 class="header center orange-text">Employee Search</h1>
-            <div class="row center">
-              <h5 class="header col s12 light">Choose Your Hire</h5>
-            </div>
-            <div class="row center">
-              <a class="btn-large waves-effect waves-light orange" id="download-button" href="http://localhost:8080/api/applicants/frontend">Front End Dev</a>
-              <a class="btn-large waves-effect waves-light light blue" id="download-button" href="http://localhost:8080/api/applicants/backend">Back End Dev</a>
-              <a class="btn-large waves-effect waves-light orange" id="download-button" href="http://localhost:8080/api/applicants/fullstack">Full Stack Dev</a>
-              <a class="btn-large waves-effect waves-light light blue" id="download-button" href="http://localhost:8080/api/applicants/cybersecurity">Cyber Security</a>
+<html lang="en">
 
-            </div>
-            <br><br>
-      
-          </div>
-        </div>
-      
-      
-        <div class="container">
-          <div class="section">
-      
-            <!--   Icon Section   -->
-            <div class="row">
-              <div class="col s12 m4">
-                <div class="icon-block">
-                  <h2 class="center light-blue-text"><i class="material-icons">people</i></h2>
-                  <h5 class="center">Find Your Next Employee!</h5>
-      
-                  <p class="light">Depending on what your needs are, we look for the appropriate candidate to best fulfill those needs.</p>
-                </div>
-              </div>
-      
-              <div class="col s12 m4">
-                <div class="icon-block">
-                  <h2 class="center light-blue-text"><i class="material-icons">android</i></h2>
-                  <h5 class="center">Fast and Convenient!</h5>
-      
-                  <p class="light">Unlike other search engines, we are dedicated in finding qualified candidates in fields dedicated to computers.</p>
-                </div>
-              </div>
-      
-              <div class="col s12 m4">
-                <div class="icon-block">
-                  <h2 class="center light-blue-text"><i class="material-icons">wb_incandescent</i></h2>
-                  <h5 class="center">User Friendly Interface</h5>
-      
-                  <p class="light">Our interface is very user friendly and you should have no problem finding what you are looking for</p>
-                </div>
-              </div>
-            </div>
-      
-          </div>
-          <br><br>
-        </div>
-        <div class="container">
-          <div class="row">
-            
-          </div>
-        </div>
-      
-        <footer class="page-footer orange">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <img src="image/gitajob.png" alt="Brand" height="60" width="100">
-                <p class="grey-text text-lighten-4">We are a team of coding students students working on this project like it's our full time job. Although we work for free, any amount would help support and continue development on this project and is greatly appreciated.</p>
-      
-      
-              </div>
-              
-              
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-            </div>
-          </div>
-        </footer>
-      
-      
-        <!--  Scripts-->
-        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="../../bin/materialize.js"></script>
-        <script src="js/init.js"></script>
-        <script src="../js/frontend.js"></script>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+  <title>Employee Search</title>
 
-        
-      
-        
-      
-      <div class="sidenav-overlay"></div><div class="drag-target"></div></body></html>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.min.css" rel="stylesheet" type="text/css" media="screen,projection">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen,projection">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="amber lighten-2" role="navigation" id="employer_nav">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="../../index.html" class="brand-logo">
+        <img src="../img/logo_employer.png">
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+
+      <!-- mobile navbar -->
+      <ul id="nav-mobile" class="sidenav">
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+    </div>
+  </nav>
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br>
+      <br>
+      <h1 class="header center amber-text">Employee Search</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Choose Your Hire</h5>
+      </div>
+      <div class="row center">
+        <a class="btn-large waves-effect waves-light amber" id="download-button" href="http://localhost:8080/api/applicants/frontend">Front End Dev</a>
+        <a class="btn-large waves-effect waves-light light blue" id="download-button" href="http://localhost:8080/api/applicants/backend">Back End Dev</a>
+        <a class="btn-large waves-effect waves-light amber" id="download-button" href="http://localhost:8080/api/applicants/fullstack">Full Stack Dev</a>
+        <a class="btn-large waves-effect waves-light light blue" id="download-button" href="http://localhost:8080/api/applicants/cybersecurity">Cyber Security</a>
+
+      </div>
+      <br>
+      <br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text">
+              <i class="material-icons">people</i>
+            </h2>
+            <h5 class="center">Find Your Next Employee!</h5>
+
+            <p class="light">Depending on what your needs are, we look for the appropriate candidate to best fulfill those needs.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text">
+              <i class="material-icons">android</i>
+            </h2>
+            <h5 class="center">Fast and Convenient!</h5>
+
+            <p class="light">Unlike other search engines, we are dedicated in finding qualified candidates in fields dedicated to computers.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text">
+              <i class="material-icons">wb_incandescent</i>
+            </h2>
+            <h5 class="center">User Friendly Interface</h5>
+
+            <p class="light">Our interface is very user friendly and you should have no problem finding what you are looking for</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <br>
+  </div>
+  <div class="container">
+    <div class="row">
+
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="page-footer amber">
+    <div class="container">
+      <div class="row">
+        <div class="col l8 s12">
+          <h5 class="white-text">About Us</h5>
+          <p class="white-text">Here at GitaJob, it is our goal to build a platform for creative individuals to connect with great companies in
+            the tech industry.</p>
+        </div>
+        <div class="col l4 s12">
+          <h5 class="white-text">Resources</h5>
+          <ul>
+            <li>
+              <a href="resume.html" id="resource-links">Resume / Cover Letter</a>
+            </li>
+            <li>
+              <a href="interview.html" id="resource-links">Interview Tips</a>
+            </li>
+            <li>
+              <a href="meetup.html" id="resource-links">MeetUps in your Area</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2018
+        <a class="light-blue-text" href="#">GitaJob</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../../bin/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="../js/frontend.js"></script>
+
+
+  <div class="sidenav-overlay"></div>
+  <div class="drag-target"></div>
+</body>
+
+</html>
