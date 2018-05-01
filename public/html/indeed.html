@@ -70,7 +70,7 @@
         <a href="#" class="waves-effect waves-light light-blue btn"><i class="material-icons right">search</i>submit</a>
       </div>
       <div class="col s12 m3">
-        <a href="#" class="waves-effect waves-light light-blue btn"><i class="material-icons right">clear</i>clear</a>
+        <a href="#" id="search-btn" class="waves-effect waves-light light-blue btn"><i class="material-icons right">clear</i>clear</a>
       </div>
     </div>
     <br><br><br>
@@ -80,7 +80,22 @@
   <!-- form results display -->
   <div class="container">
     <div class="row center">
-      <br><br><i>(results displayed here)</i><br><br><br><br>
+      <br><br><i>Job Search Results</i><br><br><br><br>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="well" id="stats" hidden="true">
+      <h2 id="title"></h2>
+      <div>
+        <h3><strong>Job Title:</strong> <span id="author"></span></h3>
+        <h3><strong>Location:</strong> <span id="location"></span></h3>
+        <h3><strong>Company:</strong> <span id="company"></span></h3>
+        <h3><strong>Contact:</strong> <span id="contact"></span></h3>
+        <h3><strong>Job Overview:</strong> <span id="joboverview"></span></h3>
+        <h3><strong>Salary:</strong> <span id="salary"></span></h3>
+        <h3><strong>Bonuses:</strong> <span id="bonuses"></span></h3>
+        <h3><strong>Created at:</strong> <span id="createdAt"></span></h3>
+      </div>
     </div>
   </div>
 

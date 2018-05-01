@@ -1,54 +1,43 @@
-var Indeed = {};
-
-(function($){
+// When user hits the search-btn
+$("#search-btn").on("click", function(event) {
+    event.preventDefault();
   
-    Indeed = function(publisher){
+    // Save the job they typed into the job-search input
+    var jobSearched = $("#jobtitle").val().trim();
+  
+    // Make an AJAX get request to our api, including the user's book in the url
+    $.get("/api/" + jobSearched, function(data) {
+  
+    // Save the job they typed into the job-search input
+    var locationSearched = $("#location").val().trim();
+  
+    // Make an AJAX get request to our api, including the user's book in the url
+    $.get("/api/" + locationSearched, function(data) {
 
-        this.publisher = publisher;
+    renderJobs(data);
+    })
 
-        this.defaults = {'v': '2', 'format': 'json', 'publisher': this.publisher};
+});
 
-        this.endpoint = 'http://api.indeed.com/ads/apisearch';
+});
+ 
+function renderJobs(data) {
+    if (data.length !== 0) {
+  
+      $("#stats").empty();
+      $("#stats").show();
+  
+      for (var i = 0; i < data.length; i++) {
+  
+        var div = $("<div>");
+  
+        div.append("<h2>" + data[i].title + "</h2>");
+        div.append("<p>Author: " + data[i].author + "</p>");
+        div.append("<p>Genre: " + data[i].genre + "</p>");
+        div.append("<p>Pages: " + data[i].pages + "</p>");;
+        $("#stats").append(div);
+  
+      }
 
-        this.search = function(params, success){
-            this.validate_params(params);
-
-            for(var attr in this.defaults){params[attr] = this.defaults[attr];}
-            
-            $.ajax({
-                url: this.endpoint,
-                dataType: 'jsonp',
-                type: 'GET',
-                data: params,
-                success: success
-            });
-        };
-
-        this.required_fields = ['userip', 'useragent', ['q', 'l']];
-
-        this.validate_params = function(params){
-            var num_required = this.required_fields.length;
-
-            for(var i = 0; i < num_required; i++){
-                var field = this.required_fields[i];
-                if(field instanceof Array){
-                    var num_one_required = field.length;
-                    var has_one = false;
-                    for(var x = 0; x < num_one_required; x++){
-                        if(field[x] in params){
-                            has_one = true;
-                            break;
-                        }
-                    }
-                    if(!has_one){
-                        throw "You must provide one of the following " + field.join();
-                    }
-                }else if(!(field in params)){
-                    throw "The field "+field+" is required";
-                }
-            }
-        };
-
-    };
-
-})(jQuery);
+    }
+}
