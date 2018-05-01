@@ -1,4 +1,4 @@
-var Book = require("../models/book.js");
+var JobSearch = require("../models/jobsearch.js");
 
 // Routes
 // =============================================================
