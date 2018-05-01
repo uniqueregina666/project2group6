@@ -1,6 +1,4 @@
-#         gitaJob Application
-# 
-#         
+#         gitaJob Application        
 Developers involved
 Christopher Shim Back end
 Matheus Ribeiro Back end
