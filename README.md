@@ -9,7 +9,7 @@ Mike Maroney Front end,
 
 <h1>Description</h1>
 		
-*gitaJob* “gitaJob” is a full stack web site that will be
+“gitaJob” is a full stack web site that will be
 using Materialize on the Front End. We will also be incorporating
 a new node npm (TBD) as our new technology. We will be creating
 our own database . gitaJob is an all in one go to web site for
