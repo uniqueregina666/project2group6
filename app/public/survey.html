@@ -1,68 +1,83 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Job Survey</title>
+	<title>Employee Survey</title>
 
 	<!-- Link to the jQuery Library -->
-  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-  	<!-- Including Font Awesome Icons -->
-  	<script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
+	<!-- Including Font Awesome Icons -->
+	<script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
 
 	<!-- Link to reset stylesheet -->
-	<link rel="stylesheet" href="css/reset.css">
+	<!-- <link rel="stylesheet" href="css/reset.css"> -->
 
 	<!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<!-- Compiled and minified Materialize CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 
 	<!-- Compiled and minified Materialize JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-          
+
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<header>
-		<nav>
-			<div class="nav-wrapper blue accent-2">
-				<i class="fa fa-address-book-o fa-5x" aria-hidden="true" id=logo-icon></i>
-				<a href="/" class="brand-logo" id="logo">Job Survey</a>
-				<ul class="right hide-on-med-and-down" id="head-nav-links">
-					<li><a href="/survey">Survey</a></li>
-					<li><a href="https://github.com/uniqueregina666/GitaJob">GitHub Repo</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>
+	<!-- navbar -->
+	<nav class="light-blue lighten-2" role="navigation" id="employee_nav">
+		<div class="nav-wrapper container">
+			<a id="logo-container" href="../../index.html" class="brand-logo">
+				<img src="../img/logo_employee.png">
+			</a>
+			<ul class="right hide-on-med-and-down">
+				<li>
+					<a href="#">Login</a>
+				</li>
+				<li>
+					<a href="#">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
 	<main>
 		<div class="container">
 			<div class="row">
+				<br>
+				<br>
 				<div class="col s12 z-depth-5 mainpanel">
 					<div id="mainpanel-content">
-						<h1>Survey Questions</h1>
+						<h1 class="header center">
+							<span class="light-blue-text">Employee Survey</span>
+						</h1>
 						<div class="divider"></div>
 
 						<h3>About You</h3>
 
 						<div class="input-field col s6">
 							<h5>Name (Required)</h5>
-							<i class="material-icons prefix">account_circle</i>
+							<i class="material-icons prefix">
+								<span class="light-blue-text">account_circle</span>
+							</i>
 							<input type="text" class="validate" placeholder="Your Name Here" id="userName">
 						</div>
 
 						<div class="input-field col s6">
 							<h5>Email (Required)</h5>
-							<i class="material-icons prefix">picture_in_picture</i>
+							<i class="material-icons prefix">
+								<span class="light-blue-text">picture_in_picture</span>
+							</i>
 							<input type="text" class="validate" placeholder="Email" id="userPhoto">
 						</div>
 
 						<!-- Survey Questions -->
 						<div class="input-field col s12">
-							<h3>Question 1</h3>
+							<h4>
+								<span class="light-blue-text">Question 1</span>
+							</h4>
 							<h5>Do you like to make things appealing to others?</h5>
 							<select id="question1">
 								<option value="" disabled selected>Choose your option</option>
@@ -75,7 +90,9 @@
 						</div>
 
 						<div class="input-field col s12">
-							<h3>Question 2</h3>
+							<h4>
+								<span class="light-blue-text">Question 2</span>
+							</h4>
 							<h5>Can you design something with a theme in mind?</h5>
 							<select id="question2">
 								<option value="" disabled selected>Choose your option</option>
@@ -88,7 +105,9 @@
 						</div>
 
 						<div class="input-field col s12">
-							<h3>Question 3</h3>
+							<h4>
+								<span class="light-blue-text">Question 3</span>
+							</h4>
 							<h5>Can explain your ideas to others in a way that they can understand?</h5>
 							<select id="question3">
 								<option value="" disabled selected>Choose your option</option>
@@ -101,8 +120,10 @@
 						</div>
 
 						<div class="input-field col s12">
-							<h3>Question 4</h3>
-							<h5>In your free time do you like to play logic games? (Sudoku,Minesweeper)</h5>
+							<h4>
+								<span class="light-blue-text">Question 4</span>
+							</h4>
+							<h5>In your free time do you like to play logic games? (Sudoku, Minesweeper)</h5>
 							<select id="question4">
 								<option value="" disabled selected>Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
@@ -114,7 +135,9 @@
 						</div>
 
 						<div class="input-field col s12">
-							<h3>Question 5</h3>
+							<h4>
+								<span class="light-blue-text">Question 5</span>
+							</h4>
 							<h5>Would you think of yourself as a problem solver?</h5>
 							<select id="question5">
 								<option value="" disabled selected>Choose your option</option>
@@ -127,8 +150,10 @@
 						</div>
 
 						<div class="input-field col s12">
-							<h3>Question 6</h3>
-							<h5>Good at multi-tasking</h5>
+							<h4>
+								<span class="light-blue-text">Question 6</span>
+							</h4>
+							<h5>Are you good at multi-tasking?</h5>
 							<select id="question6">
 								<option value="" disabled selected>Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
@@ -140,8 +165,10 @@
 						</div>
 
 						<div class="input-field col s12">
-							<h3>Question 7</h3>
-							<h5>Good at doing further research?</h5>
+							<h4>
+								<span class="light-blue-text">Question 7</span>
+							</h4>
+							<h5>Are you good at doing further research?</h5>
 							<select id="question7">
 								<option value="" disabled selected>Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
@@ -153,8 +180,10 @@
 						</div>
 
 						<div class="input-field col s12">
-							<h3>Question 8</h3>
-							<h5>You have a love for technology?</h5>
+							<h4>
+								<span class="light-blue-text">Question 8</span>
+							</h4>
+							<h5>Do you have a love for technology?</h5>
 							<select id="question8">
 								<option value="" disabled selected>Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
@@ -166,8 +195,10 @@
 						</div>
 
 						<div class="input-field col s12">
-							<h3>Question 9</h3>
-							<h5>You like to win arguments?</h5>
+							<h4>
+								<span class="light-blue-text">Question 9</span>
+							</h4>
+							<h5>Do you like to win arguments?</h5>
 							<select id="question9">
 								<option value="" disabled selected>Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
@@ -179,8 +210,10 @@
 						</div>
 
 						<div class="input-field col s12">
-							<h3>Question 10</h3>
-							<h5>People say you a good attenion to details?</h5>
+							<h4>
+								<span class="light-blue-text">Question 10</span>
+							</h4>
+							<h5>Do you have a good attenion to details?</h5>
 							<select id="question10">
 								<option value="" disabled selected>Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
@@ -196,26 +229,65 @@
 							<button class="btn waves-effect waves-light" type="submit" name="action" id="submitButton">Submit Responses
 								<i class="material-icons right">send</i>
 							</button>
+							<br>
+							<br>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<br>
+		<br>
+		<h3 class="header center">
+			<span class="light-blue-text">Thank you for taking our brief survey.</span>
+		</h3>
+		<br>
+		<br>
 	</main>
 
-	<footer class="page-footer blue accent-2">
+	<!-- footer -->
+	<footer class="page-footer light-blue lighten-2">
 		<div class="container">
 			<div class="row">
 				<div class="col l6 s12">
-					<h5 class="white-text"></h5>
-					<p class="grey-text text-lighten-4">Thank you for taking the brief survey.</p>
+					<h5 class="white-text">About Us</h5>
+					<p class="white-text">Here at GitaJob, it is our goal to build a platform for creative individuals to connect with great companies in the
+						tech industry.</p>
+				</div>
+				<div class="col l3 s12">
+					<h5 class="white-text">Resources</h5>
+					<ul>
+						<li>
+							<a class="white-text" href="#!">Link 1</a>
+						</li>
+						<li>
+							<a class="white-text" href="#!">Link 2</a>
+						</li>
+						<li>
+							<a class="white-text" href="#!">Link 3</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col l3 s12">
+					<h5 class="white-text">Connect</h5>
+					<ul>
+						<li>
+							<a class="white-text" href="#!">Link 1</a>
+						</li>
+						<li>
+							<a class="white-text" href="#!">Link 2</a>
+						</li>
+						<li>
+							<a class="white-text" href="#!">Link 3</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="footer-copyright">
 			<div class="container">
-				
-				<a class="grey-text text-lighten-4 right" href="https://github.com/uniqueregina666/GitaJob">Reference Work</a>
+				© 2018
+				<a class="amber-text" href="#">GitaJob</a>
 			</div>
 		</div>
 	</footer>
@@ -223,7 +295,6 @@
 	<!-- Modal Dialog Displaying Closest Job Match -->
 	<div id="modal1" class="modal">
 		<div class="modal-content">
-			<h4></h4>
 			<div class="divider"></div>
 			<h5 id="userMatch"></h5>
 			<img id="userMatchImage" class="materialboxed" width="650" src="https://www.pexels.com/collections/not-n7g0axq/">
@@ -234,7 +305,7 @@
 	</div>
 
 	<script type="text/javascript">
-		$(document).ready(function() {
+		$(document).ready(function () {
 			$('select').material_select();
 			$('.modal').modal({
 				dismissible: false, // Modal can be dismissed by clicking outside of the modal
@@ -246,13 +317,13 @@
 			});
 		});
 		// Activate submit button
-		$('#submitButton').on('click', function(event) {
+		$('#submitButton').on('click', function (event) {
 			event.preventDefault();
 			// Gather user inputs
 			var userInput = {
 				name: $('#userName').val().trim(),
 				photo: $('#userPhoto').val().trim(),
-				scores:[
+				scores: [
 					$('#question1').val().trim(),
 					$('#question2').val().trim(),
 					$('#question3').val().trim(),
@@ -268,16 +339,17 @@
 			// console.log('userInput = ' + JSON.stringify(userInput));
 			// Add user inputs to friends list
 			$.post('/api/friends', userInput)
-      		.done(function(data) {
-      			// console.log('response = ' + JSON.stringify(data));
-      			// Set the name and image values of friend match
-      			$('#userMatch').html(data.matchName);
-		    	$("#userMatchImage").attr("src", data.matchImage);
-		    	// Pop open the modal dialog
-      			$('#modal1').modal('open');
-			  
-			});
+				.done(function (data) {
+					// console.log('response = ' + JSON.stringify(data));
+					// Set the name and image values of friend match
+					$('#userMatch').html(data.matchName);
+					$("#userMatchImage").attr("src", data.matchImage);
+					// Pop open the modal dialog
+					$('#modal1').modal('open');
+
+				});
 		});
 	</script>
 </body>
+
 </html>
