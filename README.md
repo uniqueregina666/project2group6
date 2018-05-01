@@ -20,9 +20,9 @@ matches of users who took the survey, based upon the job they are
 posting for.
     
 The application is implemented using a
-[Node.js](https://nodejs.org/en/) and
-[MySQL2.js](https://www.npmjs.com/package/mysql2) and
-[Body-Parse.js](https://www.npmjs.com/package/body-parser)
+[Node](https://nodejs.org/en/) and
+[MySQL2](https://www.npmjs.com/package/mysql2) and
+[Body-Parse](https://www.npmjs.com/package/body-parser)
 [Express](https://expressjs.com/) server on the backend and HTML
 with CSS on the front end.
 
