@@ -2,6 +2,7 @@
 
 var express = require("express");
 var bodyParser = require("body-parser");
+var path = require("path");
 
 // set up express app
 
@@ -18,7 +19,7 @@ app.use(bodyParser.json());
 
 // static directory
 
-app.use(express.static("./public"));
+app.use(express.static(path.join(__dirname,"public")));
 
 // Routes
 require("./routing/applicants-api-routes")(app);
