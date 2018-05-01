@@ -2,10 +2,10 @@
   "development": {
     "username": "root",
     "password": "root",
-    "database": "job_postings",
+    "database": "Jobs_db",
     "host": "127.0.0.1",
     "dialect": "mysql",
-    "port": "8889"
+    "port": "3306"
   },
   "test": {
     "username": "root",
