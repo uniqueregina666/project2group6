@@ -1,7 +1,6 @@
 #         gitaJob Application        
 #Developers involved:
-
-#Christopher Shim Back end,
+Christopher Shim Back end,
 Matheus Ribeiro Back end,
 Regina Ramos Front and Back end,
 Zach Schneider Back end,
