@@ -1,17 +1,16 @@
 #         gitaJob Application        
 <h1>Developers involved</h1>
-Christopher Shim Back end,
-Matheus Ribeiro Back end,
-Regina Ramos Front and Back end,
-Zach Schneider Back end,
-Eric Hasrie Front end,
-Mike Maroney Front end,
+Christopher Shim Backend,
+Matheus Ribeiro Backend,
+Regina Ramos Front and Backend,
+Zach Schneider Backend,
+Eric Hasrie Frontend,
+Mike Maroney Frontend,
 
 <h1>Description</h1>
 		
 “gitaJob” is a full stack web site that will be
-using Materialize on the Front End. We will also be incorporating
-a new node npm (TBD) as our new technology. We will be creating
+using Materialize on the Frontend.We will be creating
 our own database . gitaJob is an all in one go to web site for
 employers and future employees in the Tech industry. Job seekers
 can take a quiz to see what type of job is well suited for them.
@@ -20,13 +19,12 @@ prepare for the workforce. Employers can post jobs and receive
 matches of users who took the survey, based upon the job they are
 posting for.
     
-
-		*gitaJob* application is meant to simulate a simple
-	Job app. The application is implemented using a
-	[Node.js](https://nodejs.org/en/) and
-	[MySQL.js](https://www.npmjs.com/package/mysql) and
-           [Express](https://expressjs.com/) server on the backend and HTML
-	with CSS on the front end.
+The application is implemented using a
+[Node.js](https://nodejs.org/en/) and
+[MySQL2.js](https://www.npmjs.com/package/mysql2) and
+[Body-Parse.js](https://www.npmjs.com/package/body-parser)
+[Express](https://expressjs.com/) server on the backend and HTML
+with CSS on the front end.
 
 
 ##         Demo
