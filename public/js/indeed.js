@@ -5,31 +5,29 @@ $("#search-btn").on("click", function(event) {
     // Save the job they typed into the job-search input
     var jobSearched = $("#jobtitle").val().trim();
   
-    // Make an AJAX get request to our api, including the user's book in the url
+    // Make an AJAX get request to our api, including the job in the url
     $.get("/api/" + jobSearched, function(data) {
   
     // Save the job they typed into the job-search input
     var locationSearched = $("#location").val().trim();
   
-    // Make an AJAX get request to our api, including the user's book in the url
+    // Make an AJAX get request to our api, including the location in the url
     $.get("/api/" + locationSearched, function(data) {
 
-    renderJobs(data);
+      $("#job-area").prepend(row);
     })
 
 });
 
 });
  
-function renderJobs(data) {
+$.then(function()  {
     if (data.length !== 0) {
-  
-      $("#stats").empty();
-      $("#stats").show();
   
       for (var i = 0; i < data.length; i++) {
   
         var div = $("<div>");
+        row.addClass("job");
   
         div.append("<h2>Job Title:" + data[i].jobtitle + "</h2>");
         div.append("<p>Location: " + data[i].location + "</p>");
@@ -40,9 +38,9 @@ function renderJobs(data) {
         div.append("<p>Bonuses: " + data[i].bonuses + "</p>");
         div.append("<p>Created at: " + data[i].createdAt+ "</p>");;
        
-        $("#stats").append(div);
+        $("#job-area").prepend(row);
   
       }
 
     }
-}
+})
