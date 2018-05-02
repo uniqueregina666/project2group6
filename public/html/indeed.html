@@ -17,15 +17,6 @@
   <!-- script -->
   <script src="../js/indeed.js"></script>
     <script type="text/javascript">
-        var indeed_client = new Indeed("YOUR_PUBLISHER_NUMBER");
-        indeed_client.search({
-            q: 'javascript',
-            l: 'austin',
-            userip: '1.2.3.4',
-            useragent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2)',
-        }, function(search_response){
-            //render the jobs from the search_response
-        });
     </script>
 </head>
 
@@ -67,10 +58,10 @@
     <div class="row center">
       <div class="col s12 m6"></div>
       <div class="col s12 m3">
-        <a href="#" class="waves-effect waves-light light-blue btn"><i class="material-icons right">search</i>submit</a>
+        <button id="search-btn" class="waves-effect waves-light light-blue btn"><i class="material-icons right">search</i>submit</button>
       </div>
       <div class="col s12 m3">
-        <a href="#" id="search-btn" class="waves-effect waves-light light-blue btn"><i class="material-icons right">clear</i>clear</a>
+        <button class="waves-effect waves-light light-blue btn"><i class="material-icons right">clear</i>clear</button>
       </div>
     </div>
     <br><br><br>
