@@ -52,8 +52,8 @@ $("#fullstack-search-btn").on("click", function(event){
  
             var div = $("<div>");
  
-            div.append("<p>Last Name: " + data[i].last_name + "</p>");
-            div.append("<p>First Name: " + data[i].first_name + "</p>");
+            div.append("<p>Last Name: " + data[i].lastName + "</p>");
+            div.append("<p>First Name: " + data[i].firstName + "</p>");
             div.append("<p>Title: " + data[i].title + "</p>");
             div.append("<p>Street: " + data[i].street + "</p>");
             div.append("<p>City: " + data[i].city + "</p>");
