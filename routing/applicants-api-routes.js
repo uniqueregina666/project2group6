@@ -3,47 +3,47 @@ var db = require("../models");
 module.exports = function(app) {
   // Find all Applicants and return them to the user with res.json
   app.get("/api/applicants", function(req, res) {
-    db.Applicant.findAll({}).then(function(dbApplicant) {
-      res.json(dbApplicant);
+    db.developers.findAll({}).then(function(dbdevelopers) {
+      res.json(dbdevelopers);
     });
   });
 
    app.get("/api/applicants/:specialty?", function(req, res) {
        var specialty = req.params.specialty;
        if (specialty==="frontend"){
-        db.Applicant.findAll({
+        db.developers.findAll({
             where: {
-              specialty: "Front End"
+              title: "Frontend Developer"
             }
-          }).then(function(dbApplicant) {
-            res.send(dbApplicant);
+          }).then(function(dbdevelopers) {
+            res.send(dbdevelopers);
           });
        }
        else if (specialty==="backend"){
-        db.Applicant.findAll({
+        db.developers.findAll({
             where: {
-              specialty: "Back End"
+              title: "Backend Developer"
             }
-          }).then(function(dbApplicant) {
-            res.json(dbApplicant);
+          }).then(function(dbdevelopers) {
+            res.json(dbdevelopers);
           });
        }
        else if (specialty==="fullstack"){
-        db.Applicant.findAll({
+        db.developers.findAll({
             where: {
-              specialty: "Full Stack"
+              title: "Fullstack Developer"
             }
-          }).then(function(dbApplicant) {
-            res.json(dbApplicant);
+          }).then(function(dbdevelopers) {
+            res.json(dbdevelopers);
           });
        }
        else if (specialty==="cybersecurity"){
-        db.Applicant.findAll({
+        db.developers.findAll({
             where: {
-              specialty: "Cyber Security"
+              title: "Cyber Security"
             }
-          }).then(function(dbApplicant) {
-            res.json(dbApplicant);
+          }).then(function(dbdevelopers) {
+            res.json(dbdevelopers);
           });
        }
   });

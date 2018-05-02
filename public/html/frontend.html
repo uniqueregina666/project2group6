@@ -48,10 +48,14 @@
         <h5 class="header col s12 light">Choose Your Hire</h5>
       </div>
       <div class="row center">
-        <a class="btn-large waves-effect waves-light amber" id="download-button" href="http://localhost:8080/api/applicants/frontend">Front End Dev</a>
-        <a class="btn-large waves-effect waves-light light blue" id="download-button" href="http://localhost:8080/api/applicants/backend">Back End Dev</a>
-        <a class="btn-large waves-effect waves-light amber" id="download-button" href="http://localhost:8080/api/applicants/fullstack">Full Stack Dev</a>
-        <a class="btn-large waves-effect waves-light light blue" id="download-button" href="http://localhost:8080/api/applicants/cybersecurity">Cyber Security</a>
+        <a class="btn-large waves-effect waves-light amber" id="frontend-search-btn" href="http://localhost:8080/api/applicants/frontend">Front End Dev</a>
+        <a class="btn-large waves-effect waves-light light blue" id="backend-search-btn" href="http://localhost:8080/api/applicants/backend">Back End Dev</a>
+        <a class="btn-large waves-effect waves-light amber" id="cybersecurity-search-btn" href="http://localhost:8080/api/applicants/fullstack">Full Stack Dev</a>
+        <a class="btn-large waves-effect waves-light light blue" id="fullstack-search-btn" href="http://localhost:8080/api/applicants/cybersecurity">Cyber Security</a>
+
+        <div id="info" hidden="true">
+
+        </div>
 
       </div>
       <br>
@@ -149,6 +153,7 @@
   <script src="../../bin/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="../js/frontend.js"></script>
+  
 
 
   <div class="sidenav-overlay"></div>
