@@ -1,20 +1,21 @@
-var JobSearch = require("../models/jobsearch.js");
+// var JobSearch = require("../models/jobsearch.js");
+var db = require("../models/");
 
 // Routes
 // =============================================================
 module.exports = function(app) {
   // Get all jobs
   app.get("/api/all", function(req, res) {
-    JobSearch.findAll({}).then(function(results) {
+    db.JobSearch.findAll({}).then(function(results) {
       res.json(results);
     });
   });
 
   // Get a specific book
   app.get("/api/:jobtitle", function(req, res) {
-    JobSearch.findAll({
+    db.JobSearch.findAll({
       where: {
-        jobtitle: req.params.JobSearch
+        jobtitle: req.params.jobtitle
       }
     }).then(function(results) {
       res.json(results);

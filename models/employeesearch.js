@@ -1,6 +1,6 @@
-// var DataTypes = require("sequelize");
+var DataTypes = require("sequelize");
 
-// var sequelize = require("../config/config.json");
+var sequelize = require("../config/config.json");
 
 module.exports = function(sequelize, DataTypes) {
 
