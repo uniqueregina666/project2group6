@@ -4,8 +4,12 @@ var db = require("../models");
 module.exports = function(app) {
     app.get("/", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/index.html"));
-      }); 
-    
+      });
+
+      app.get("/survey", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/html/survey.html"));
+      });
+
       app.get("/employer", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/html/employer.html"));
       }); 
